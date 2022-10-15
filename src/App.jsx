@@ -1,13 +1,29 @@
+import { useRef } from "react";
 import Button from "./Buttons";
+import html2pdf from "html2pdf.js";
 
 function App() {
+  const elToPrint = useRef(null);
+  const htmToPdf = () => {
+    const opt = {
+      filename: "Icaro_ReDepaolini_Resume.pdf",
+      image: { type: "jpeg", quality: 1 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "px", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf(elToPrint.current, opt);
+  };
   return (
     <>
       <div className="relative flex min-h-screen flex-col justify-start gap-4 items-center overflow-hidden bg-gray-900 py-6 sm:py-24">
-        <div className="">
-          <Button func="{{ ()=>print() }}}"></Button>
+        <div onClick={htmToPdf}>
+          <Button />
         </div>
-        <div className="relative bg-white shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-5xl sm:rounded-lg ">
+        <div
+          ref={elToPrint}
+          className="relative bg-white shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-5xl sm:rounded-lg "
+        >
           <div className="mx-auto gap-2 grid grid-cols-3">
             <div className="p-4 pl-6 bg-slate-100 rounded-lg col-span-1">
               <div className="space-y-6 py-8 text-base leading-7 text-gray-600">
@@ -17,11 +33,7 @@ function App() {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center">
-                    <svg
-                      className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                       <circle cx="12" cy="12" r="11" />
                       <path
                         d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
@@ -37,11 +49,7 @@ function App() {
                     </p>
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                       <circle cx="12" cy="12" r="11" />
                       <path
                         d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
@@ -56,11 +64,7 @@ function App() {
                     </p>
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                       <circle cx="12" cy="12" r="11" />
                       <path
                         d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
@@ -97,11 +101,7 @@ function App() {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center">
-                    <svg
-                      className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                       <circle cx="12" cy="12" r="11" />
                       <path
                         d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
@@ -117,11 +117,7 @@ function App() {
                     </p>
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                       <circle cx="12" cy="12" r="11" />
                       <path
                         d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
@@ -136,11 +132,7 @@ function App() {
                     </p>
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                       <circle cx="12" cy="12" r="11" />
                       <path
                         d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
