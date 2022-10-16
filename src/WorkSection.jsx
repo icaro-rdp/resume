@@ -35,7 +35,10 @@ Collaborated with back-end developers to integrate old and new functionalities.
           {WorkExperiences.map((item, index) => (
             <li className="mb-4" key={index}>
               <div className="flex flex-col gap-1">
-                <p className="font-semibold uppercase">{item.jobTitle}</p>
+                <div className="relative font-semibold uppercase">
+                  <p className=" animate-pulse absolute h-3 top-1/4 -left-[2.4rem] aspect-square bg-slate-400 rounded-full"></p>
+                  {item.jobTitle}
+                </div>
                 <p className="font-normal capitalize">{item.company}</p>
                 <p className="font-thin">{item.date}</p>
                 <div dangerouslySetInnerHTML={{ __html: item.description }} />

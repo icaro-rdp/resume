@@ -5,9 +5,11 @@ import ProfiletSection from "./ProfileSection";
 import ContactSection from "./ContactSection";
 import EducationSection from "./EducationSection";
 import WorkSection from "./WorkSection";
+import avatar from "./assets/avatar.webp";
 
 export default function Resume() {
   const elToPrint = useRef(null);
+
   const htmToPdf = () => {
     const opt = {
       filename: "Icaro_ReDepaolini_Resume.pdf",
@@ -20,6 +22,16 @@ export default function Resume() {
   };
   return (
     <>
+      <div
+        className="z-50 cursor-pointer  hover:translate-y-2 hover:translate-x-2 transition duration-200 absolute top-8 left-8
+       "
+      >
+        <img
+          src={avatar}
+          className="filter grayscale hover:grayscale-0 transition-all duration-700 ring ring-white h-32 rounded-full"
+          alt="logo"
+        />
+      </div>
       <div className="relative flex min-h-screen flex-col justify-start gap-4 items-center overflow-hidden bg-gray-900 py-6 sm:py-24">
         <div onClick={htmToPdf}>
           <Button />
