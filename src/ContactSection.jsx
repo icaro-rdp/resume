@@ -2,6 +2,7 @@ import phone from "./assets/phone.svg";
 import email from "./assets/email.svg";
 import linkedin from "./assets/linkedin.svg";
 import location from "./assets/location.svg";
+import github from "./assets/github.svg";
 
 export default function ContactSection() {
   const underlineClasses = `
@@ -77,6 +78,22 @@ export default function ContactSection() {
                 target="_blank"
               >
                 <p className={underlineClasses}>in/icaro-re-depaolini</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="relative flex gap-2 font-thin ">
+              <img
+                className=" h-5 w-5 ml-[0.125rem] mr-1"
+                src={github}
+                alt="phone"
+              />
+              <a
+                className="cursor-pointer relative"
+                href="https://github.com/icaro-rdp"
+                target="_blank"
+              >
+                <p className={underlineClasses}>github.com/icaro-rdp</p>
               </a>
             </div>
           </li>
