@@ -25,7 +25,7 @@ export default function ContactSection() {
   return (
     <>
       <div className="flex flex-col justify-start ">
-        <h3 className="text-xl mb-8 ">CONTACT</h3>
+        <h3 className="text-xl mb-8 text-gray-500 font-bold ">CONTACT</h3>
         <ul className="flex flex-col gap-2">
           <li>
             <div className="relative flex gap-2 font-thin ">

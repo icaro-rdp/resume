@@ -14,8 +14,8 @@ export default function EducationSection() {
 
   return (
     <>
-      <div className="flex flex-col justify-start">
-        <h3 className="text-xl mb-8 ">EDUCATION</h3>
+      <div className="flex flex-col justify-start ">
+        <h3 className="text-xl mb-8 text-gray-500 font-bold">EDUCATION</h3>
         <ul>
           {University.map((item, index) => (
             <li className="mb-1" key={index}>
@@ -28,6 +28,7 @@ export default function EducationSection() {
           ))}
         </ul>
       </div>
+      <div className="my-8 w-1/2 block border-b border-gray-400 "></div>
     </>
   );
 }

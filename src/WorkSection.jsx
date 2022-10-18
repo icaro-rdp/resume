@@ -30,13 +30,12 @@ Collaborated with back-end developers to integrate old and new functionalities.
   return (
     <>
       <div className="flex flex-col justify-start">
-        <h3 className="text-xl mb-8 ">WORK EXPERIENCE</h3>
+        <h3 className="text-xl mb-8 text-gray-500 font-bold">EXPERIENCES</h3>
         <ul>
           {WorkExperiences.map((item, index) => (
-            <li className="mb-4" key={index}>
+            <li className="mb-8" key={index}>
               <div className="flex flex-col gap-1">
-                <div className="relative font-semibold uppercase">
-                  <p className=" animate-pulse absolute h-3 top-1/4 -left-[2.4rem] aspect-square bg-slate-400 rounded-full"></p>
+                <div className=" before:content-[''] before:block before:h-3 before:w-3 before:bg-gray-400 before:rounded-full before:absolute relative before:top-1 before:-left-[2.45rem] font-semibold uppercase">
                   {item.jobTitle}
                 </div>
                 <p className="font-normal capitalize">{item.company}</p>
