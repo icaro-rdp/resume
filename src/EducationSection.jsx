@@ -29,7 +29,7 @@ export default function EducationSection({ language }) {
 
   // translate the content of the array
   const translatedObj = language === "eng" ? education[0] : education[1];
-  console.log(translatedObj);
+
   return (
     <>
       <div className="flex flex-col justify-start ">
