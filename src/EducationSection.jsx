@@ -1,23 +1,43 @@
-export default function EducationSection() {
-  const University = [
-    {
-      name: "University of Milano Bicocca",
-      degree: "Bachelor of Computer science",
-      date: "2013 - 2016",
-    },
-    {
-      name: "Istituto superiore vittorio bachelet",
-      degree: "High school diploma ",
-      date: "2016 - 2020",
-    },
+export default function EducationSection({ language }) {
+  const education = [
+    [
+      {
+        name: "University of Milano Bicocca",
+        degree: "Bachelor of Computer science",
+        date: "2013 - 2016",
+      },
+      {
+        name: "Istituto superiore vittorio bachelet",
+        degree: "High school diploma ",
+        date: "2016 - 2020",
+      },
+    ],
+
+    [
+      {
+        name: "Università degli studi di Milano Bicocca",
+        degree: "Laurea in Informatica",
+        date: "2013 - 2016",
+      },
+      {
+        name: "Istituto superiore vittorio bachelet",
+        degree: "Diploma di maturità",
+        date: "2016 - 2020",
+      },
+    ],
   ];
 
+  // translate the content of the array
+  const translatedObj = language === "eng" ? education[0] : education[1];
+  console.log(translatedObj);
   return (
     <>
       <div className="flex flex-col justify-start ">
-        <h3 className="text-xl mb-8 text-gray-500 font-bold">EDUCATION</h3>
+        <h3 className="text-xl mb-8 text-gray-500 font-bold">
+          {language === "eng" ? "EDUCATION" : "ISTRUZIONE"}
+        </h3>
         <ul>
-          {University.map((item, index) => (
+          {translatedObj.map((item, index) => (
             <li className="mb-1" key={index}>
               <div className="flex flex-col gap-1">
                 <p className="font-semibold uppercase">{item.degree}</p>
