@@ -9,11 +9,11 @@ export default function SkillsSection() {
       level: 90,
     },
     {
-      name: "JavaScript",
+      name: "Javascript",
       level: 60,
     },
     {
-      name: "TypeScript",
+      name: "Typescript",
       level: 60,
     },
     {
@@ -30,6 +30,10 @@ export default function SkillsSection() {
     },
     {
       name: "Laravel",
+      level: 50,
+    },
+    {
+      name: "D365",
       level: 50,
     },
     {
