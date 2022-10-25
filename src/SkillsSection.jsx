@@ -18,7 +18,7 @@ export default function SkillsSection() {
     },
     {
       name: "React",
-      level: 50,
+      level: 60,
     },
     {
       name: "Angular",
@@ -26,7 +26,7 @@ export default function SkillsSection() {
     },
     {
       name: "Rxjs",
-      level: 70,
+      level: 50,
     },
     {
       name: "Laravel",
@@ -34,11 +34,11 @@ export default function SkillsSection() {
     },
     {
       name: "D365",
-      level: 50,
+      level: 70,
     },
     {
       name: "Figma",
-      level: 50,
+      level: 30,
     },
   ];
 

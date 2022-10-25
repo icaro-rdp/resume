@@ -8,20 +8,20 @@ export default function WorkSection({ language }) {
       description: `<p>Determined job priorities for multiple projects and
 communicated them with the team. Participated in pre-project
 analysis and technical assessments to ensure the creation of
-a user-centric interface. Redesigned sites to enhance
-navigation and improve visual appeal. Studied the best
+a user-centric interface. Redesigned sites to <b>enhance
+navigation</b> and improve visual appeal. Studied the best
 solution to implement data visualization with a strong
-collaboration with design teams. Implemented frontend
+<b>collaboration</b> with design teams. Implemented <b>frontend</b>
 architecture for multiple enterprise projects.
   </p>`,
       description_ita: `<p>Ho determinato le priorità di lavoro per più progetti e le ho
 comunicate al team. Ho partecipato all'analisi pre-progetto e
 alle valutazioni tecniche per garantire la creazione di
 un'interfaccia incentrata sull'utente. Ho ridisegnato i siti per
-migliorare la navigazione e l'aspetto visivo. Ho studiato la
-soluzione migliore per implementare la visualizzazione dei
-dati con una forte collaborazione con i team di design.
-Implementato l'architettura frontend per diversi progetti
+<b>migliorare la navigazione</b> e l'aspetto visivo. Ho studiato la
+soluzione migliore per implementare la <b>visualizzazione dei
+dati</b> con una forte <b>collaborazione</b> con i team di design.
+Implementato l'architettura <b>frontend</b> per diversi progetti
 aziendali.
   </p>`,
     },
@@ -30,22 +30,22 @@ aziendali.
       jobTitle_ita: "Consulente Microsoft Dynamics",
       company: "Oaks srl",
       date: "2019 - 2020",
-      description: `<p> Collaborated with bank business unit team to design new applications system to enhance client requirements.
+      description: `<p> Collaborated with bank business unit team to design new applications system to <b>enhance client requirements</b>.
 Prepared detailed reports on updates to project specifications, progress, identified conflicts and team activities.
-Implemented and tested enhancement feature requests to improve product functionality and extend performance.
+<b>Implemented and tested</b> enhancement feature requests to improve product functionality and extend performance.
 Translated old bank workflows into new ones inside the CRM platform.
-Collaborated with back-end developers to integrate old and new functionalities.
+Collaborated and implemented the <b>new features</b> with the back-end developers.
 </p>`,
       description_ita: `<p> Ho collaborato con il team della business unit bancaria per
-progettare un nuovo sistema di applicazioni per migliorare i
-requisiti del cliente. Ho preparato rapporti dettagliati sugli
+progettare un nuovo sistema di applicazioni per <b>migliorare i
+requisiti</b> del cliente. Ho preparato rapporti dettagliati sugli
 aggiornamenti delle specifiche del progetto, sui progressi, sui
-conflitti identificati e sulle attività del team. Implementato e
-testato le richieste di potenziamento per migliorare la
+conflitti identificati e sulle attività del team. <b>Implementato e
+testato</b> le richieste di potenziamento per migliorare la
 funzionalità del prodotto ed estenderne le prestazioni. Ho
 tradotto i vecchi flussi di lavoro bancari in nuovi flussi di
 lavoro all'interno della piattaforma CRM. Ho collaborato e
-implementato le funzionalità nuove con gli sviluppatori di
+implementato le <b>nuove funzionalità</b> con gli sviluppatori di
 back-end.
 </p>`,
     },

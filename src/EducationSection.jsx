@@ -4,12 +4,12 @@ export default function EducationSection({ language }) {
       {
         name: "University of Milano Bicocca",
         degree: "Bachelor of Computer science",
-        date: "2013 - 2016",
+        date: "2016 - 2020",
       },
       {
-        name: "Istituto superiore vittorio bachelet",
-        degree: "High school diploma ",
-        date: "2016 - 2020",
+        name: "Istituto superiore Vittorio Bachelet",
+        degree: "High school diploma",
+        date: "2011 - 2016",
       },
     ],
 
@@ -17,12 +17,12 @@ export default function EducationSection({ language }) {
       {
         name: "Università degli studi di Milano Bicocca",
         degree: "Laurea in Informatica",
-        date: "2013 - 2016",
+        date: "2016 - 2020",
       },
       {
-        name: "Istituto superiore vittorio bachelet",
+        name: "Istituto superiore Vittorio Bachelet",
         degree: "Diploma di maturità",
-        date: "2016 - 2020",
+        date: "2011 - 2016",
       },
     ],
   ];

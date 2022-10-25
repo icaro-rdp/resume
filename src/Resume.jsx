@@ -13,9 +13,19 @@ import resumeIT from "./assets/Re_Depaolini_Icaro_Resume_IT.pdf";
 import ita from "./assets/it.svg";
 import eng from "./assets/eng.svg";
 
+// function to detect the language of the browser
+const detectLanguage = () => {
+  const language = navigator.language;
+  if (language === "it-IT" || language === "it") {
+    return "ita";
+  } else {
+    return "eng";
+  }
+};
+
 export default function Resume() {
   const elToPrint = useRef(null);
-  const [language, setLanguage] = useState("eng");
+  const [language, setLanguage] = useState(detectLanguage());
   function changeLanguage(type) {
     setLanguage(type);
   }
@@ -27,7 +37,12 @@ export default function Resume() {
        "
       ></div>
       <div className="px-8 relative flex min-h-screen flex-col justify-start gap-4 items-center overflow-hidden bg-gray-900 py-6 sm:py-24">
-        <div className="animate-fade-in-down flex gap-4 items-center ">
+        <img
+          src={language === "eng" ? eng : ita}
+          className="ring ring-white fixed top-10 left-10  animate-grayscale-in-down  border-b border-gray-900  absolute h-24 rounded-md"
+          alt=""
+        />
+        <div className="animate-fade-in-down flex gap-4 items-center mb-4 ">
           <a
             download={`Re_Depaolini_icaro_Resume_${language.toUpperCase()}`}
             target="_blank"
@@ -53,11 +68,6 @@ export default function Resume() {
           ref={elToPrint}
           className="relative px-8 tracking-wider relative bg-white shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-6xl sm:rounded-md overflow-hidden "
         >
-          <img
-            src={language === "eng" ? eng : ita}
-            className=" animate-grayscale-in-down -translate-x-28 -translate-y-12 border-b border-gray-400 -rotate-45 absolute h-24 lg:h-32"
-            alt=""
-          />
           <div className="relative mx-auto  grid grid-cols-3 pt-16 pb-16 px-12">
             <h1 className=" tracking-[1.5rem] text-5xl font-thin col-span-3 flex gap-8 justify-center ">
               <b>ICARO </b> <p className="text-gray-500">RE DEPAOLINI</p>
