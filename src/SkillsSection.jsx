@@ -3,42 +3,52 @@ export default function SkillsSection() {
     {
       name: "HTML",
       level: 90,
+      date: "2020 - now",
     },
     {
       name: "CSS",
       level: 90,
+      date: "2020 - now",
     },
     {
       name: "Javascript",
       level: 60,
+      date: "2020 - now",
     },
     {
       name: "Typescript",
       level: 60,
+      date: "2020 - now",
     },
     {
       name: "React",
       level: 60,
+      date: "2022 - now",
     },
     {
       name: "Angular",
       level: 70,
+      date: "2020 - now",
     },
     {
       name: "Rxjs",
       level: 50,
+      date: "2020 - now",
     },
     {
       name: "Laravel",
       level: 50,
+      date: "2020 - 2021",
     },
     {
       name: "D365",
       level: 70,
+      date: "2020 - now",
     },
     {
       name: "Figma",
       level: 30,
+      date: "2022 - now",
     },
   ];
 
