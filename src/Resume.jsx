@@ -42,7 +42,7 @@ export default function Resume() {
         className="scale-50 z-50 cursor-pointer  hover:translate-y-2 hover:translate-x-2 transition duration-200 absolute top-8 left-8
        "
       ></div>
-      <div className="px-8 relative flex min-h-screen flex-col justify-start gap-4 items-center overflow-hidden bg-gray-900 py-6 sm:py-24">
+      <div className="px-4 md:px-8 relative flex min-h-screen flex-col justify-start gap-4 items-center overflow-hidden bg-gray-900 py-6 sm:py-24">
         <img
           src={language === "eng" ? eng : ita}
           className="hidden lg:block ring ring-white fixed top-10 left-10  animate-grayscale-in-down  border-b border-gray-900  absolute h-24 rounded-md"
@@ -72,9 +72,9 @@ export default function Resume() {
 
         <div
           ref={elToPrint}
-          className="relative px-8 tracking-wider relative bg-white shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-6xl sm:rounded-md overflow-hidden "
+          className="relative px-0 md:px-8 tracking-wider relative bg-white shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-6xl sm:rounded-md overflow-hidden "
         >
-          <div className="relative mx-auto  grid grid-cols-12 pt-16 pb-16 px-12">
+          <div className="relative mx-auto  grid grid-cols-12 pt-16 pb-16 px-8 ">
             <h1 className=" tracking-[1.5rem] text-2xl md:text-3xl lg:text-5xl font-thin col-span-12 flex flex-col lg:flex-row gap-2 lg:gap-8 justify-center text-center lg:text-left">
               <b>ICARO </b> <p className="text-gray-500">RE DEPAOLINI</p>
             </h1>
