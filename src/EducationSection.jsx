@@ -48,7 +48,8 @@ export default function EducationSection({ language }) {
           ))}
         </ul>
       </div>
-      <div className="my-8 w-1/2 block border-b border-gray-400 "></div>
+      <div className="my-8 w-full md:w-1/2 block border-b border-gray-400 "></div>
     </>
   );
 }
+
