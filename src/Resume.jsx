@@ -84,7 +84,7 @@ export default function Resume() {
             <div className=" col-span-12 md:col-span-6 lg:col-span-4 pr-0 lg:pr-8 mb-8 md:mb-0">
               <ContactSection language={language} />
             </div>
-            <div className="col-span-12 md:col-span-6 lg:col-span-8 border-t md:border-l border-slate-400 pl-0 md:pl-8 pt-8 md:pt-0">
+            <div className="col-span-12 md:col-span-6 lg:col-span-8 border-t md:border-t-0 md:border-l border-slate-400 pl-0 md:pl-8 pt-8 md:pt-0">
               <ProfileSection language={language} />
             </div>
             <div className="col-span-12 my-8 border-b border-slate-400"></div>
@@ -92,7 +92,7 @@ export default function Resume() {
               <div className="col-span-12 md:col-span-6 lg:col-span-4 pr-8 row-span-1">
                 <EducationSection language={language} />
               </div>
-              <div className="col-span-12 md:col-span-6 lg:col-span-8 row-span-3 md:border-l pt-8 md:pt-0 border-t border-slate-400 pl-0 md:pl-8 space-y-8">
+              <div className="col-span-12 md:col-span-6 lg:col-span-8 row-span-3 md:border-l pt-8 md:pt-0 border-t md:border-t-0 border-slate-400 pl-0 md:pl-8 space-y-8">
                 <WorkSection language={language} />
 
                 {/* <PassionsSection /> */}
