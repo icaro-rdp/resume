@@ -78,15 +78,18 @@ export default function Resume() {
             <h1 className=" tracking-[1.5rem] text-2xl md:text-3xl lg:text-5xl font-thin col-span-12 flex flex-col lg:flex-row gap-2 lg:gap-8 justify-center text-center lg:text-left">
               <b>ICARO </b> <p className="text-gray-500">RE DEPAOLINI</p>
             </h1>
-            <h2 className="mt-8 flex lg:grid grid-cols-3 col-span-12 mb-8 py-2 pb-8 text-xl border-b border-slate-400 font-thin col-span-3  justify-center">
+            <h2 className="mt-8 flex lg:grid grid-cols-3 col-span-12 mb-8 py-2 pb-8 text-xl border-b border-slate-400 font-thin col-span-12  justify-center">
               <p className="col-start-2 col-end-[-1] ">FRONTEND DEVELOPER</p>
             </h2>
-            <div className=" col-span-12 md:col-span-6 lg:col-span-4 pr-0 lg:pr-8 mb-8 md:mb-0">
-              <ContactSection language={language} />
+            <div className="grid col-span-12 grid-cols-12 grid-row-3">
+              <div className="col-span-12 md:col-span-6 lg:col-span-4 pr-8 row-span-1 mb-8 md:mb-0">
+                <ContactSection language={language} />
+              </div>
+              <div className="col-span-12 md:col-span-6 lg:col-span-8 row-span-3 md:border-l pt-8 md:pt-0 border-t md:border-t-0 border-slate-400 pl-0 md:pl-8 space-y-8">
+                <ProfileSection language={language} />
+              </div>
             </div>
-            <div className="col-span-12 md:col-span-6 lg:col-span-8 border-t md:border-t-0 md:border-l border-slate-400 pl-0 md:pl-8 pt-8 md:pt-0">
-              <ProfileSection language={language} />
-            </div>
+
             <div className="col-span-12 my-8 border-b border-slate-400"></div>
             <div className="grid col-span-12 grid-cols-12 grid-row-3">
               <div className="col-span-12 md:col-span-6 lg:col-span-4 pr-8 row-span-1">
