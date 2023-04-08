@@ -15,6 +15,12 @@ import eng from "./assets/eng.svg";
 
 // function to detect the language of the browser
 const detectLanguage = () => {
+  // get param from url if present
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("lang")) {
+    return urlParams.get("lang");
+  }
+
   const language = navigator.language;
   if (language === "it-IT" || language === "it") {
     return "ita";
@@ -33,7 +39,7 @@ export default function Resume() {
   return (
     <>
       <div
-        className="z-50 cursor-pointer  hover:translate-y-2 hover:translate-x-2 transition duration-200 absolute top-8 left-8
+        className="scale-50 z-50 cursor-pointer  hover:translate-y-2 hover:translate-x-2 transition duration-200 absolute top-8 left-8
        "
       ></div>
       <div className="px-8 relative flex min-h-screen flex-col justify-start gap-4 items-center overflow-hidden bg-gray-900 py-6 sm:py-24">
@@ -101,3 +107,4 @@ export default function Resume() {
     </>
   );
 }
+
